@@ -1,8 +1,9 @@
-body{
-  background-color: #fff8ea;
+body {
+    background-color: #fff8ea;
 }
 
 li {
-  display: inline;
+    display: inline;
 }
 
+.Navbar-brand {}
