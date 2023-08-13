@@ -1,8 +1,13 @@
 import React from "react";
 import Navbar from "./components/navbar";
+import Carousel from "./components/Carousel";
 
 function App(){
-    return(<div><Navbar /> </div>);
+    return(
+    <div>
+        <Navbar /> 
+        <Carousel />
+    </div>);
 
 }
 

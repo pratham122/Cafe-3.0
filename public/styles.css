@@ -2,10 +2,19 @@ body {
     background-color: #fff8ea;
 }
 
+.navbar{
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+}
+
 li {
     display: inline;
-    
+    padding-left:  8px;
+    padding-right: 8px;
+    font-size: large;
 }
+
+
 
 .logo{
     width: 70px;
@@ -16,3 +25,12 @@ li {
     font-family: 'bree serif';
     font-size: 2.5rem;
 }
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+.carousel-inner{
+    background-color: #d0b8a8;
+}
+
