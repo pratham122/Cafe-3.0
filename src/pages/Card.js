@@ -1,5 +1,5 @@
 import React from "react";
-import {CardDataBurger} from "../components/CardData";
+import {CardDataBurger} from "../pages/CardData";
 import CardItem from "./CardItem";
 
 function createCard(cardProps){
