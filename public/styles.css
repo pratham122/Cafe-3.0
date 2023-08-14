@@ -56,6 +56,7 @@ li {
     display: flex;
     border-radius: 100%;
     align-items: center;
+    justify-content: center;
 }
 
 #Menu {
@@ -83,4 +84,39 @@ h5.dish {
 
 .carousel-inner {
     background-color: #d0b8a8;
+}
+
+h2 {
+    color: white;
+    font-size: larger;
+}
+
+.list {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding-left: 0px;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.menu-card {
+    background-color: #d0b8a8;
+    margin: 17% 0 17% 0;
+    padding: 2% 5% 2% 5%;
+}
+
+.menu-items {
+    padding: 2%;
+}
+
+.add-btn {
+    width: 10rem;
+    border-radius: 2rem;
+    float: right;
+}
+
+.card-img-top {
+    border-radius: 1rem 1rem 0 0;
 }
