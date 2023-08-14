@@ -2,35 +2,85 @@ body {
     background-color: #fff8ea;
 }
 
-.navbar{
+.navbar {
     margin-right: 1.5%;
     margin-left: 1.5%;
 }
 
 li {
     display: inline;
-    padding-left:  8px;
+    padding-left: 8px;
     padding-right: 8px;
     font-size: large;
 }
 
-
-
-.logo{
+.logo {
     width: 70px;
     height: auto;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-family: 'bree serif';
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
-.carousel-item{
+.head-container {
+    padding: 5% 5% 0 5%;
+    height: 20rem;
+    width: 20rem;
+}
+
+.big-heading {
+    font-size: 4rem;
+    font-family: "righteous";
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.title-img {
+    height: 700px;
+    width: 700px;
+}
+
+.Login-button {
+    margin: 0% 5% 5% 5%;
+    padding-bottom: 5%;
+}
+
+.btn {
+    margin: 0 0 1% 1%;
+}
+
+.menu-image {
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+}
+
+#Menu {
+    background-color: #A77979;
+    margin: 17% 0 17% 0;
+    padding: 5% 2%;
+    align-content: center;
+}
+
+h5.dish {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff8ea;
+    text-align: center;
+    padding: 7%;
+}
+
+.nav-item {
+    font-size: large;
+}
+
+.carousel-item {
     padding: 7% 15%;
 }
 
-.carousel-inner{
+.carousel-inner {
     background-color: #d0b8a8;
 }
-

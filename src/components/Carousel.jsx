@@ -1,6 +1,6 @@
 import React from "react";
-import careInner from "./careInner";
-import data from "./careInnerData";
+// import careInner from "./careInner";
+// import data from "./careInnerData";
 
 function Carousel() {
     return(<div className="container ">
