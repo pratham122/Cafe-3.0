@@ -1,5 +1,5 @@
 import React from "react";
-import {CardDataBurger} from "../pages/CardData";
+import {CardDataPizza} from "../pages/CardData";
 import CardItem from "./CardItem";
 
 function createCard(cardProps){
@@ -10,14 +10,14 @@ function createCard(cardProps){
     price={cardProps.price}
      />);
 }
-function Card(){
-   
+
+function CardPizza(){
    return(      
    <div className="menu-card container-fluid">
             <div className="row">
-              {CardDataBurger.map(createCard)}
+              {CardDataPizza.map(createCard)}
             </div>
     </div>);
 }
 
-export default Card;
+export default CardPizza;

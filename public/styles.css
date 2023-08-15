@@ -57,7 +57,7 @@ li {
     display: flex;
     border-radius: 100%;
     align-items: center;
-    justify-content: center;
+    margin: 5px;
 }
 
 #Menu {
@@ -72,7 +72,7 @@ h5.dish {
     font-weight: bold;
     color: #fff8ea;
     text-align: center;
-    padding: 7%;
+    padding-top: 7%;
 }
 
 .nav-item {
