@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import { RouterProvider, createBrowserRouter, Outlet } from 'react-router-dom';
 import CardPizza from "./pages/Pizza";
 import CardJacket from "./pages/Jacket";
+import Footer from "./components/Footer";
 
 const appRouter = createBrowserRouter([
    {
@@ -54,6 +55,7 @@ function App() {
       <div>
          <Header />
          <RouterProvider router={appRouter} />
+         <Footer />
       </div>
    );
 

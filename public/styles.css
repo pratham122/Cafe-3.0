@@ -60,6 +60,37 @@ li {
     margin: 5px;
 }
 
+.add-btn {
+    width: 10rem;
+    border-radius: 0.5rem;
+    float: right;
+}
+
+.qty-btnMinus {
+    float: right;
+    margin: 0px;
+    height: 39px;
+    width: 38px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.qty-btnPlus {
+    float: right;
+    margin: 0;
+    height: 39px;
+    width: 38px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.qty-count {
+    float: right;
+    border: 1px solid #28a745;
+    margin: 0;
+    padding: 6px 10px 7px 10px;
+}
+
 #Menu {
     background-color: #A77979;
     margin: 17% 0 17% 0;
@@ -85,6 +116,7 @@ h5.dish {
 
 .carousel-inner {
     background-color: #d0b8a8;
+    margin-bottom: 40px;
 }
 
 h2 {
@@ -112,12 +144,28 @@ h2 {
     padding: 2%;
 }
 
-.add-btn {
-    width: 10rem;
-    border-radius: 2rem;
-    float: right;
-}
-
 .card-img-top {
     border-radius: 1rem 1rem 0 0;
+}
+
+#footer {
+    align-content: center;
+    height: 300px;
+    background-color: #ffffff;
+    opacity: 80%;
+}
+
+.rowf {
+    background-color: #ffffff;
+    margin: auto 3px;
+    height: 30%;
+    /* align-content: ; */
+}
+
+.colf {
+    margin: 5px 0.5px;
+}
+
+.h2f {
+    color: #495057;
 }
