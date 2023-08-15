@@ -1,26 +1,59 @@
 import React from "react";
 import Menu from "./components/Menu";
-import Carousel from "./components/Carousel";
+// import Carousel from "./components/Carousel";
 import Header from "./components/Header";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import CardBurger from "../pages/Burger";
-
-function App(){
-    return(<div>
-   <Header />
-   <Menu />
-   <Router>
-         <Switch>
-            <Route path="/menu-item/:itemId" component={CardBurger} />
-            {/* Other routes */}
-         </Switch>
-      </Router>
-   <Carousel />
+import CardBurger from "./pages/Burger";
+import Home from "./components/Home";
+import { RouterProvider, createBrowserRouter, Outlet } from 'react-router-dom';
 
 
-    </div>);
+
+
+
+
+const appRouter = createBrowserRouter([
+   {
+      path: "/",
+      element: <div>
+         <Outlet />
+      </div>,
+      children: [
+         {
+            path: "/",
+            element: <Home />
+         },
+         {
+            path: "/Burger",
+            element: <CardBurger />
+         }
+      ]
+   },
+])
+
+function App() {
+   return (
+      <div>
+         <Header />
+         <RouterProvider router={appRouter} />
+
+
+      </div>
+   );
 
 }
+
+
+// const App = () => {
+//    return (<div>
+//       <Header />
+//       {/* <RouterProvider router={appRouter} /> */}
+
+
+
+//    </div>);
+
+// }
+
 
 
 export default App;

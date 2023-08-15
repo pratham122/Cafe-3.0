@@ -2,7 +2,7 @@ const MenuImages = [{
         id: 1,
         ImgURL: require('../images/latte.jpg'),
         name: "Lattes",
-        navigate: "/cafe-3.0/src/pages/Burger.js"
+        navigate: "/Burger"
     },
     {
         id: 2,
