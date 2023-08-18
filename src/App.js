@@ -2,7 +2,7 @@ import React from "react";
 // import Menu from "./components/Menu";
 // import Carousel from "./components/Carousel";
 import Navbar from "./components/navbar";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import CardBurger from "./pages/Burger";
 import CardLattes from "./pages/Lattes";
 import Home from "./components/Home";
@@ -55,7 +55,6 @@ function App() {
    return (
       <div>
          <Navbar />
-         {/* <Header /> */}
          <RouterProvider router={appRouter} />
          <Footer />
       </div>
