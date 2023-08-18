@@ -8,10 +8,10 @@ function Footer() {
 <footer className="text-center text-lg-start bg-light text-muted">
   
   {/* <!-- Section: Links  --> */}
-  <section className="">
+  <section className="footer">
     <div className="container text-center text-md-start mt-5">
       {/* <!-- Grid row --> */}
-      <div className="row mt-3">
+      <div className="rowf row mt-3">
         {/* <!-- Grid column --> */}
         <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           {/* <!-- Content --> */}

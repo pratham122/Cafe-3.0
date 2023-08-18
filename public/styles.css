@@ -163,9 +163,19 @@ h2 {
     border-radius: 1rem 1rem 0 0;
 }
 
-#footer {
-    align-content: center;
-    height: 300px;
-    background-color: #ffffff;
-    opacity: 80%;
+.footer {
+    height: fit-content;
+    background-color: black;
+    padding-top: 0.5px;
+    text-decoration: none;
 }
+
+.footer a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+
+/* .rowf {
+    margin-top: 3rem!important;
+} */
