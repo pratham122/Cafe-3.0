@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "./navbar";
+// import Navbar from "./navbar";
 import backgroundImage from "../images/Bg1.jpg"; // Update the path
 
 function Header() {
    return (
-      <section className="title" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize:"cover", backgroundRepeat:"no-repeat" }}>
-         <Navbar />
+      <section className="title" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize:"cover", backgroundRepeat:"no-repeat",position:"relative" }}>
+         {/* <Navbar /> */}
          <div className="home">
             <div className="head-container">
                <h1 className="big-heading">It's Coffee Time</h1>

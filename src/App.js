@@ -1,6 +1,7 @@
 import React from "react";
 // import Menu from "./components/Menu";
 // import Carousel from "./components/Carousel";
+import Navbar from "./components/navbar";
 import Header from "./components/Header";
 import CardBurger from "./pages/Burger";
 import CardLattes from "./pages/Lattes";
@@ -44,16 +45,17 @@ const appRouter = createBrowserRouter([
          {
             path: "/extras",
             element: <CardLattes />
-         },
+         }
          
       ]
-   },
+   }
 ])
 
 function App() {
    return (
       <div>
-         <Header />
+         <Navbar />
+         {/* <Header /> */}
          <RouterProvider router={appRouter} />
          <Footer />
       </div>
