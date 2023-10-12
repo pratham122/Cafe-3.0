@@ -16,7 +16,7 @@ router.post("/createuser", [body('email').isEmail(),
             await User.create({
                 name: req.body.name,
                 password: req.body.password,
-                email: req.body.name.email,
+                email: req.body.email,
                 location: req.body.location
             })
             res.json({ success: true });

@@ -1,4 +1,5 @@
 // import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import backgroundImage from "../images/Bg1.jpg";
 
 function Header() {
@@ -10,8 +11,8 @@ function Header() {
         </div>
   
         <div className="Login-button">
-                    <button type="button" className="btn btn-light">Sign in</button>
-                    <button type="button" className="btn btn-light">Sign up</button>
+                    <Link to={"/login"}><button type="button" className="btn btn-light">Sign in</button></Link>
+                    <Link to={"/register"}><button type="button" className="btn btn-light">Sign up</button></Link>
         </div>
         <div className="Search">
            <form className="d-flex">

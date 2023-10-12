@@ -133,6 +133,23 @@ h5.dish {
     font-size: large;
 }
 
+.cascading-right {
+    margin-right: -50px;
+    background: hsla(0, 0%, 100%, 0.55);
+    backdrop-filter: blur(30px);
+}
+
+@media (max-width: 991.98px) {
+    .cascading-right {
+        margin-right: 0;
+    }
+}
+
+.register {
+    z-index: 1;
+    position: relative;
+}
+
 .carousel-item {
     padding: 7% 15%;
 }
