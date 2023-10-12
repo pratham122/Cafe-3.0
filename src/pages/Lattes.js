@@ -1,6 +1,7 @@
 import React from "react";
 import {CardDataLattes} from "../pages/CardData";
 import CardItem from "./CardItem";
+import Navbar from "../components/navbar";
 
 function createCard(cardProps){
     return(<CardItem
@@ -12,11 +13,14 @@ function createCard(cardProps){
 }
 
 function CardLattes(){
-   return(      
-   <div className="menu-card container-fluid">
+   return(  
+    <div> 
+      <Navbar />   
+       <div className="menu-card container-fluid">
             <div className="row">
               {CardDataLattes.map(createCard)}
             </div>
+      </div>
     </div>);
 }
 

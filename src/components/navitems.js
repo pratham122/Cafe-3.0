@@ -6,7 +6,7 @@ const navitems = [{
     {
         id: 2,
         item: "Menu",
-        navigate: "/",
+        navigate: "/Menu",
     },
     {
         id: 3,

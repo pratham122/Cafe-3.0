@@ -1,6 +1,7 @@
 import React from "react";
 import {CardDataJacket} from "../pages/CardData";
 import CardItem from "./CardItem";
+import Navbar from "../components/navbar";
 
 function createCard(cardProps){
     return(<CardItem
@@ -12,11 +13,12 @@ function createCard(cardProps){
 }
 
 function CardJacket(){
-   return(      
-   <div className="menu-card container-fluid">
-            <div className="row">
-              {CardDataJacket.map(createCard)}
-            </div>
+   return(
+    <div>
+      <Navbar />
+      <div className="menu-card container-fluid">
+        <div className="row">{CardDataJacket.map(createCard)}</div>
+      </div>
     </div>);
 }
 
