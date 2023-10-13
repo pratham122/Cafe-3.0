@@ -5,22 +5,42 @@ import { Link } from "react-router-dom";
 function SignUp() {
   const [credentials, setcredentials] = useState({ name: "", email: "", password: "", geolocation: "" })
 
-  const handlesubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:8000/api/createuser", {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application.json'
-      },
-      body: JSON.stringify({ name: credentials.name, email: credentials.email, password: credentials.password, location: credentials.location })
-    });
-    const json = await response.json();
-    console.log(json);
 
-    if(!json.success){
-      alert("Enter valid credentials");
+    try {
+      const response = await fetch("http://localhost:8000/api/createuser", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          name: credentials.name,
+          email: credentials.email,
+          password: credentials.password,
+          location: credentials.geolocation // Corrected property name
+        })
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        console.error('Error:', errorData.message);
+        alert(`Error: ${errorData.message}`);
+        return;
+      }
+
+      const json = await response.json();
+      console.log(json);
+
+      if (!json.success) {
+        alert("Enter valid credentials");
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert("An error occurred. Please try again later.");
     }
-  }
+  };
+
 
   const handleChange = (event) => {
     setcredentials({ ...credentials, [event.target.name]: event.target.value })
@@ -34,7 +54,7 @@ function SignUp() {
             <div className="card cascading-right">
               <div className="card-body p-5 shadow-5 text-center">
                 <Link to="/"> <img src={require("../images/logo3.png")} alt="My logo" style={{ "height": "162px", "width": "200px", "margin": "2%" }}></img></Link>
-                <form onSubmit={handlesubmit}>
+                <form onSubmit={handleSubmit}>
                   {/* <!-- 2 column grid layout with text inputs for the first and last names --> */}
 
 
@@ -83,7 +103,6 @@ function SignUp() {
           </div>
         </div>
       </div>
-      {/* <!-- Jumbotron --> */}
     </section>
   );
 };
