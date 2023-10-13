@@ -8,7 +8,6 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
       const response = await fetch("http://localhost:8000/api/createuser", {
         method: "POST",
         headers: {
@@ -18,16 +17,10 @@ function SignUp() {
           name: credentials.name,
           email: credentials.email,
           password: credentials.password,
-          location: credentials.geolocation // Corrected property name
+          location: credentials.geolocation 
         })
       });
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        console.error('Error:', errorData.message);
-        alert(`Error: ${errorData.message}`);
-        return;
-      }
 
       const json = await response.json();
       console.log(json);
@@ -35,10 +28,6 @@ function SignUp() {
       if (!json.success) {
         alert("Enter valid credentials");
       }
-    } catch (error) {
-      console.error('Error:', error);
-      alert("An error occurred. Please try again later.");
-    }
   };
 
 
@@ -75,7 +64,7 @@ function SignUp() {
                   </div>
 
                   <div className="form-outline mb-4">
-                    <input type="text" id="form3Example2" placeholder="Location" className="form-control" name='location' value={credentials.location} onChange={handleChange} />
+                    <input type="text" id="form3Example2" placeholder="Location" className="form-control" name='geolocation' value={credentials.geolocation} onChange={handleChange} />
                   </div>
 
                   {/* <!-- Submit button --> */}
