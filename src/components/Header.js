@@ -12,7 +12,7 @@ function Header() {
   
         <div className="Login-button">
                     <Link to={"/login"}><button type="button" className="btn btn-light">Sign in</button></Link>
-                    <Link to={"/register"}><button type="button" className="btn btn-light">Sign up</button></Link>
+                    <Link to={"/createuser"}><button type="button" className="btn btn-light">Sign up</button></Link>
         </div>
         <div className="Search">
            <form className="d-flex">

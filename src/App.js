@@ -11,7 +11,7 @@ import{BrowserRouter as Router, Routes, Route}from 'react-router-dom'
 import CardPizza from "./pages/Pizza";
 import CardJacket from "./pages/Jacket";
 // import Footer from "./components/Footer";
-import SignIn from "./components/signIn";
+import SignIn from "./components/SignIn";
 import Menu from "./components/Menu";
 import SignUp from "./components/signUp";
 
@@ -26,7 +26,7 @@ function App() {
              <Route exact path="/" element={<Home />} />
              <Route exact path="/Menu" element={<Menu />} />
              <Route exact path="/login" element={<SignIn />} />
-             <Route exact path="/register" element={<SignUp />} />
+             <Route exact path="/createuser" element={<SignUp />} />
              <Route exact path="/lattes" element={<CardLattes />} />
              {/* <Route exact path="/shakes" element={<Card />} /> */}
              <Route exact path="/burgers" element={<CardBurger />} />
