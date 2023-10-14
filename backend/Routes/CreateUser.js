@@ -3,10 +3,10 @@ const router = express.Router()
 const User = require('../models/Users')
 const { body, validationResult } = require('express-validator')
 router.post("/createuser", [body('email').isEmail(),
-        body('name').isLength({ min: 5 }),
-        body('password').isLength({ min: 5 })
-    ],
-    async(req, res) => {
+body('name').isLength({ min: 5 }),
+body('password').isLength({ min: 5 })
+],
+    async (req, res) => {
 
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
@@ -25,5 +25,28 @@ router.post("/createuser", [body('email').isEmail(),
             res.json({ success: false });
         }
     })
+
+router.post("/loginuser",[body('email').isEmail(),
+body('password').isLength({ min: 5 })
+],
+    async (req, res) => {
+        let email = req.body.email;
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ errors: errors.array() });
+        }
+        try {
+            let userData = await User.findOne({ email });
+            if (!userData) {
+                return res.status(400).json({errors: "Try with correct password"});
+            }
+            if (req.body.password !== userData.password){
+                return res.status(400).json({errors: "Try with correct password"});
+        } return res.json({ success: true });
+    }catch (error) {
+        console.log(error)
+        res.json({ success: false });
+    }
+})
 
 module.exports = router;

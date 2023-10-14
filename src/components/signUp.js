@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 
 
 function SignUp() {
+  let navigate=useNavigate();
   const [credentials, setcredentials] = useState({ name: "", email: "", password: "", geolocation: "" })
 
   const handleSubmit = async (e) => {
@@ -27,6 +28,9 @@ function SignUp() {
 
       if (!json.success) {
         alert("Enter valid credentials");
+      }
+      if (json.success) {
+        navigate("/");
       }
   };
 
