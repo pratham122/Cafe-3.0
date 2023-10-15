@@ -14,12 +14,13 @@ import CardJacket from "./pages/Jacket";
 import SignIn from "./components/SignIn";
 import Menu from "./components/Menu";
 import SignUp from "./components/signUp";
+import { CartProvider } from "./components/ContextReducer";
 
 
 
 function App() {
    return (
-      
+      <CartProvider>
       <Router>
        <div>
           <Routes>
@@ -36,6 +37,7 @@ function App() {
           </Routes>
        </div>
       </Router>
+      </CartProvider>
    
    );
 
