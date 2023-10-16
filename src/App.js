@@ -15,6 +15,7 @@ import SignIn from "./components/SignIn";
 import Menu from "./components/Menu";
 import SignUp from "./components/signUp";
 import { CartProvider } from "./components/ContextReducer";
+import CartPage from "./components/CartPage";
 
 
 
@@ -24,6 +25,7 @@ function App() {
       <Router>
        <div>
           <Routes>
+            <Route exact path="/cart" element={<CartPage/>}/>
              <Route exact path="/" element={<Home />} />
              <Route exact path="/Menu" element={<Menu />} />
              <Route exact path="/login" element={<SignIn />} />

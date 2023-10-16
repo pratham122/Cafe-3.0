@@ -11,7 +11,7 @@ const navitems = [{
     {
         id: 3,
         item: "Cart",
-        navigate: "/",
+        navigate: "/cart",
     },
     {
         id: 4,
