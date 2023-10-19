@@ -5,7 +5,7 @@ import Cart from "./Cart";
 
 function createCart(item) {
     return (<Cart key={item.id}
-        image={item.img}
+        img={item.img}
         name={item.name}
         qty={item.qty}
         price={item.price}

@@ -14,16 +14,18 @@ function CardItem(props) {
       id: props.foodItem.id,
       name: props.foodItem.name,
       qty: count,
-      price: props.foodItem.price*count,
-      imgURL:props.foodItem.imgURL
+      img:props.foodItem.imgURL,
+      price: props.foodItem.price*count
+      
     });
+
   }
- 
+
   useEffect(() => {
     // This effect runs whenever 'count' or 'added' changes
     if (added) {
       handleAddToCart(); // Add to cart after 'added' is set to true
-      console.log(data);
+      
     } 
     
   }, [added, count]);

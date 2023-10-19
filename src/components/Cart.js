@@ -23,7 +23,7 @@ function Cart(props) {
                                     <div className="col-lg-3 col-md-12 mb-4 mb-lg-0">
                                         {/* <!-- Image --> */}
                                         <div className="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                                            <img src={props.imgURL}
+                                            <img src={props.img}
                                                 className="w-100" alt="" />
 
                                         </div>
