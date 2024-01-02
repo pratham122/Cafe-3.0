@@ -15,7 +15,6 @@ import SignIn from "./components/SignIn";
 import Menu from "./components/Menu";
 import SignUp from "./components/signUp";
 import { CartProvider } from "./components/ContextReducer";
-import Cart from "./components/Cart";
 import CartPage from "./components/CartPage";
 
 

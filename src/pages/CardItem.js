@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { useDispatchCart, useCart } from "../components/ContextReducer";
+import { useDispatchCart} from "../components/ContextReducer";
 
 function CardItem(props) {
   let dispatch = useDispatchCart();
-  let data = useCart();
+
   const [count, setCount] = useState(0);
   const [added, setAdded] = useState(false); // Track whether the item is added
 
@@ -14,22 +14,19 @@ function CardItem(props) {
       id: props.foodItem.id,
       name: props.foodItem.name,
       qty: count,
-      img:props.foodItem.imgURL,
-      price: props.foodItem.price*count
-      
+      price: props.foodItem.price,
+      finalPrice:props.foodItem.price*props.foodItem.qty,
+      img:props.foodItem.imgURL
     });
-
   }
-
+ 
   useEffect(() => {
     // This effect runs whenever 'count' or 'added' changes
     if (added) {
       handleAddToCart(); // Add to cart after 'added' is set to true
-      
     } 
     
-  }, [added, count]);
-
+  })
 
   function handleAddClick() {
     if (!added) {

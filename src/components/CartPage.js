@@ -3,14 +3,14 @@ import { useCart } from "./ContextReducer";
 import Cart from "./Cart";
 
 
-function createCart(item) {
-    return (<Cart key={item.id}
-        img={item.img}
-        name={item.name}
-        qty={item.qty}
-        price={item.price}
-    />);
-};
+// function createCart(item) {
+//     return (<Cart key={item.id}
+//         img={item.img}
+//         name={item.name}
+//         qty={item.qty}
+//         price={item.price}
+//     />);
+// };
 
 function CartPage() {
     let data = useCart();
@@ -23,7 +23,14 @@ function CartPage() {
                             <div className="card-header py-3">
                                 <h5 className="mb-0">Cart - 2 items</h5>
                             </div>
-                            {data.map(createCart)}
+                            {data.map((food, index) => <Cart
+                            id={food.id}
+                            img={food.img}
+                            name={food.name}
+                            qty={food.qty}
+                            price={food.price}
+                            index={index}
+                             />)}
                         </div>
 
                         <div className="card mb-4 mb-lg-0">
@@ -72,7 +79,7 @@ function CartPage() {
                                     </li>
                                 </ul>
 
-                                <button type="button" className="btn btn-primary btn-lg btn-block">
+                                <button type="button" className="btn btn-success  btn-lg btn-block">
                                     Go to checkout
                                 </button>
                             </div>

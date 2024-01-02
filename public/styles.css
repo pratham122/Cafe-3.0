@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff
+    background-color: #ffffff !important
 }
 
 .navbar {
@@ -392,6 +392,7 @@ ul {
     cursor: pointer;
     vertical-align: top
 }
+
 
 /* .rowf {
     margin-top: 3rem!important;

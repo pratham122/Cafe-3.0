@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import {useDispatchCart } from "./ContextReducer";
 
 function Cart(props) {
+    let dispatch=useDispatchCart();
+    let index=props.index;
     const [count, setCount] = useState(props.qty);
     const [added, setAdded] = useState(false);
     function handleAddClick() {
@@ -9,7 +12,7 @@ function Cart(props) {
         }
         setCount(count + 1);
     }
-
+ 
     function handleDecreaseClick() {
         if (count === 1) {
             setAdded(false);
@@ -33,14 +36,14 @@ function Cart(props) {
                                     <div className="col-lg-5 col-md-6 mb-4 mb-lg-0">
                                         {/* <!-- Data --> */}
                                         <p><strong>{props.name}</strong></p>
-                                        <button type="button" className="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
-                                            title="Remove item">
+                                        <button type="button" className="btn btn-danger btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
+                                            title="Remove item" onClick={()=>{dispatch({type:"REMOVE",index:index})}}>
                                             <i className="fas fa-trash"></i>
                                         </button>
-                                        <button type="button" className="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
+                                        {/* <button type="button" className="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
                                             title="Move to the wish list">
                                             <i className="fas fa-heart"></i>
-                                        </button>
+                                        </button> */}
                                         {/* <!-- Data --> */}
                                     </div>
 
