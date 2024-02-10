@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.js": "/static/js/main.f5faef99.js",
+    "static/media/Carousel1.png": "/static/media/Carousel1.6a923556ba9ebc045439.png",
+    "static/media/Carousel2.png": "/static/media/Carousel2.2981ad1d5a6dc678c365.png",
+    "static/media/Carousel3.jpg": "/static/media/Carousel3.330a481a88839c9b84cd.jpg",
+    "static/media/Jacketpotatoes3.jpg": "/static/media/Jacketpotatoes3.30c3046e3c5f2aa3f6c6.jpg",
+    "static/media/Jacketpotatoes2.jpg": "/static/media/Jacketpotatoes2.be1d95d18e0a2889f595.jpg",
+    "static/media/Bg1.jpg": "/static/media/Bg1.621de856da1893a07119.jpg",
+    "static/media/Jacketpotatoes4.jpeg": "/static/media/Jacketpotatoes4.2639e5cf61772f4ba209.jpeg",
+    "static/media/Jacketpotatoes1.jpg": "/static/media/Jacketpotatoes1.1dc14d0e5f0228976aef.jpg",
+    "static/media/Pizza3.avif": "/static/media/Pizza3.79464f8c3daf7290cada.avif",
+    "static/media/Pizza4.avif": "/static/media/Pizza4.4bffaa361aa5458039bc.avif",
+    "static/media/Burgers.jpg": "/static/media/Burgers.79ff4159e8ff15ba5af4.jpg",
+    "static/media/Pizza2.avif": "/static/media/Pizza2.b6f4ee3256fd37270e1a.avif",
+    "static/media/burger5.jpg": "/static/media/burger5.3d74337c5161697b3443.jpg",
+    "static/media/pizza.jpg": "/static/media/pizza.3da1dce9df2f484c0d54.jpg",
+    "static/media/latte3.webp": "/static/media/latte3.897881bf3f0b85ac01a3.webp",
+    "static/media/logo3.png": "/static/media/logo3.344cf5272a698394eab4.png",
+    "static/media/latte1.webp": "/static/media/latte1.07092459df0dc17b38d4.webp",
+    "static/media/latte5.webp": "/static/media/latte5.390f24b02067719543d7.webp",
+    "static/media/Jacketpotatoes5.webp": "/static/media/Jacketpotatoes5.53767b1c14eaf450692a.webp",
+    "static/media/latte4.webp": "/static/media/latte4.8af1d2d2b5eaff2757e0.webp",
+    "static/media/latte2.webp": "/static/media/latte2.9efb2d23650b606f1aa3.webp",
+    "static/media/fries.jpg": "/static/media/fries.a2f7298267f2820cd900.jpg",
+    "static/media/burger2.jpg": "/static/media/burger2.f77e9ee233816d7f842a.jpg",
+    "static/media/Pizza1.jfif": "/static/media/Pizza1.62d660a5e6f44243873d.jfif",
+    "static/media/Pizza5.jfif": "/static/media/Pizza5.5f7c9fcf00b062e6feee.jfif",
+    "index.html": "/index.html",
+    "main.f5faef99.js.map": "/static/js/main.f5faef99.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.f5faef99.js"
+  ]
+}
