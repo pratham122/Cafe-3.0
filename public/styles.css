@@ -1,5 +1,5 @@
 body {
-    background-color: #221e1e !important
+    background-color: #ffffff !important
 }
 
 .navbar {
@@ -34,7 +34,7 @@ li {
 }
 
 .head-container {
-    padding: 5% 5% 0 5%;
+    padding: 5% 5% 0 5%;   
     height: 20rem;
     width: 20rem;
 }
