@@ -9,7 +9,7 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-      const response = await fetch("http://localhost:8000/api/createuser", {
+      const response = await fetch("https://cafe-3-0-b5ny.vercel.app/api/createuser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

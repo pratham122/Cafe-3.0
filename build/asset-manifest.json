@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.047d6f22.js",
+    "main.js": "/static/js/main.f5faef99.js",
     "static/media/Carousel1.png": "/static/media/Carousel1.6a923556ba9ebc045439.png",
     "static/media/Carousel2.png": "/static/media/Carousel2.2981ad1d5a6dc678c365.png",
     "static/media/Carousel3.jpg": "/static/media/Carousel3.330a481a88839c9b84cd.jpg",
@@ -27,9 +27,9 @@
     "static/media/Pizza1.jfif": "/static/media/Pizza1.62d660a5e6f44243873d.jfif",
     "static/media/Pizza5.jfif": "/static/media/Pizza5.5f7c9fcf00b062e6feee.jfif",
     "index.html": "/index.html",
-    "main.047d6f22.js.map": "/static/js/main.047d6f22.js.map"
+    "main.f5faef99.js.map": "/static/js/main.f5faef99.js.map"
   },
   "entrypoints": [
-    "static/js/main.047d6f22.js"
+    "static/js/main.f5faef99.js"
   ]
 }
